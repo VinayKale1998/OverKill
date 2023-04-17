@@ -2,6 +2,7 @@ import React from "react";
 import "./ExpenseItem.css";
 import   ExpenseDate from "./ExpenseDate.js"
 import Card from "./Card.js"
+import React from "react"
 
 // import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 export default function ExpenseItem(props) {

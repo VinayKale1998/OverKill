@@ -1,13 +1,12 @@
 import ExpenseItem from "./Expenseitem.js"
 import "./Expenses.css"
 import  Card from "./Card"
+import React from "react"
 
 function Expenses(props) {
   // const para = document.createElement("h1")
   // para.textContent="This is vanilla JS";
   // document.getElementById("root").append(para)
-
-
 
  
   return (

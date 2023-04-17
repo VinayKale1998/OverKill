@@ -1,4 +1,5 @@
 import Expenses from "./Components/Expenses.js"
+import React from "react"
 
 function App() {
   // const para = document.createElement("h1")
@@ -28,10 +29,14 @@ function App() {
     },
   ];
   return (
-    <div>
-     <h1> Let's get started</h1>
-      <Expenses items= {expenses}></Expenses>
-    </div>
+
+    
+React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
+
+    // <div>
+    //  <h1> Let's get started</h1>
+    //   <Expenses items= {expenses}></Expenses>
+    // </div>
   );
 }
 
