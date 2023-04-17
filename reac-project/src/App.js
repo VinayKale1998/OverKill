@@ -1,11 +1,11 @@
-import Expenses from "./Components/Expenses.js"
+import Expenses from "./Components/Expenses/Expenses"
 import React from "react"
 
 function App() {
   // const para = document.createElement("h1")
   // para.textContent="This is vanilla JS";
   // document.getElementById("root").append(para)
-  const typee = "Personal";
+
 
 
   const expenses = [
@@ -31,12 +31,15 @@ function App() {
   return (
 
     
-React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
+
 
     // <div>
     //  <h1> Let's get started</h1>
     //   <Expenses items= {expenses}></Expenses>
     // </div>
+
+    //Alternative for the above code
+    React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
   );
 }
 
