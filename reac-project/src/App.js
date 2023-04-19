@@ -1,5 +1,6 @@
 import Expenses from "./Components/Expenses/Expenses"
 import React from "react"
+import NewExpense from "./Components/NewExpense/NewExpense";
 
 function App() {
   // const para = document.createElement("h1")
@@ -32,14 +33,16 @@ function App() {
 
     
 
+    // Alternative for the below code
+    // React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
+    
+    <div>
+     <NewExpense></NewExpense>
+      <Expenses items= {expenses}></Expenses>
+    </div>
 
-    // <div>
-    //  <h1> Let's get started</h1>
-    //   <Expenses items= {expenses}></Expenses>
-    // </div>
 
-    //Alternative for the above code
-    React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
+
   );
 }
 
