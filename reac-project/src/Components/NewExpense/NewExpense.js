@@ -6,7 +6,7 @@ import "./ExpenseForm.css"
 const NewExpense = (props) => {
   return (
     <div className="new-expense"> 
-    <ExpenseForm ></ExpenseForm>
+    <ExpenseForm />
     </div>
   );
 };
