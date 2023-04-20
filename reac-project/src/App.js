@@ -5,11 +5,12 @@ import NewExpense from "./Components/NewExpense/NewExpense";
 function App() {
   // const para = document.createElement("h1")
   // para.textContent="This is vanilla JS";
-  // document.getElementById("root").append(para)
+  // document.getElementById("root").append(para)   
 
 
 
-  const expenses = [
+
+  let expenses = [
     {
       id: "e1",
       title: "CarInsurance",
@@ -29,6 +30,15 @@ function App() {
       date: new Date(2023,4,14)
     },
   ];
+
+    const addNewData=(newEntry)=>{
+      expenses=[...expenses,newEntry] 
+      
+      console.log(expenses)
+
+    }
+
+
   return (
 
     
@@ -37,7 +47,7 @@ function App() {
     // React.createElement("div",{}, React.createElement("h1",{}, "let's get started"),React.createElement(Expenses,{items:expenses}))
     
     <div>
-     <NewExpense></NewExpense>
+     <NewExpense addData={addNewData}></NewExpense>
       <Expenses items= {expenses}></Expenses>
     </div>
 

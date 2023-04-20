@@ -28,7 +28,7 @@ import React, { useState } from "react";
       <ExpenseDate Date={props.date}></ExpenseDate>
 
       <div className="expense-item__description ">{title}</div>
-      <div className="expense-item__price">{props.amount}</div>
+      <div className="expense-item__price">{props.amount}$</div>
       <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
