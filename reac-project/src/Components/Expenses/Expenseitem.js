@@ -25,7 +25,7 @@ import React, { useState } from "react";
 
   return (
     <Card className="expense-item">
-      <ExpenseDate Date={props.date}></ExpenseDate>
+      <ExpenseDate date={props.date}></ExpenseDate>
 
       <div className="expense-item__description ">{title}</div>
       <div className="expense-item__price">{props.amount}$</div>
